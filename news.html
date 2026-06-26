@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-lang="bg" class="lang-active">Новини | БРМ</title>
+  <title data-lang="en">News | BWY</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="brand-abbr"><img src="logo.png" alt="БРМ" class="brand-logo" /></div>
+        <div class="brand-name">
+          <span class="full" data-lang="bg" class="lang-active">Българска работническа младеж</span>
+          <span class="full" data-lang="en">Bulgarian Workers' Youth</span>
+          <span class="sub" data-lang="bg" class="lang-active">Официален сайт</span>
+          <span class="sub" data-lang="en">Official Website</span>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li>
+          <a href="index.html">
+            <span data-lang="bg" class="lang-active">Начало</span>
+            <span data-lang="en">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span data-lang="bg" class="lang-active">За нас</span>
+            <span data-lang="en">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="news.html" class="active">
+            <span data-lang="bg" class="lang-active">Новини</span>
+            <span data-lang="en">News</span>
+          </a>
+        </li>
+        <li>
+          <a href="articles.html">
+            <span data-lang="bg" class="lang-active">Статии</span>
+            <span data-lang="en">Articles</span>
+          </a>
+        </li>
+        <li>
+          <a href="materials.html">
+            <span data-lang="bg" class="lang-active">Материали</span>
+            <span data-lang="en">Materials</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span data-lang="bg" class="lang-active">Контакти</span>
+            <span data-lang="en">Contact</span>
+          </a>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <button class="lang-btn" aria-label="Switch to English">EN</button>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <h1 data-lang="bg" class="lang-active">Новини</h1>
+    <h1 data-lang="en">News</h1>
+    <p data-lang="bg" class="lang-active">Следете актуалните събития и дейности на Българска работническа младеж</p>
+    <p data-lang="en">Stay up to date with the latest events and activities of Bulgarian Workers' Youth</p>
+  </header>
+
+  <!-- NEWS CONTENT -->
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <!-- Filter bar -->
+        <div class="filter-bar" role="group" aria-label="Filter news">
+          <button class="filter-btn active" data-filter="all">
+            <span data-lang="bg" class="lang-active">Всички</span>
+            <span data-lang="en">All</span>
+          </button>
+          <button class="filter-btn" data-filter="events">
+            <span data-lang="bg" class="lang-active">Събития</span>
+            <span data-lang="en">Events</span>
+          </button>
+          <button class="filter-btn" data-filter="actions">
+            <span data-lang="bg" class="lang-active">Акции</span>
+            <span data-lang="en">Actions</span>
+          </button>
+          <button class="filter-btn" data-filter="solidarity">
+            <span data-lang="bg" class="lang-active">Солидарност</span>
+            <span data-lang="en">Solidarity</span>
+          </button>
+        </div>
+
+        <!-- News cards grid -->
+        <div class="cards-grid">
+
+          <article class="card" data-category="events">
+            <div class="card-img" aria-hidden="true">📢</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <time class="card-date" datetime="2026-05-09">09.05.2026</time>
+                <span class="card-tag" data-lang="bg" class="lang-active">Събитие</span>
+                <span class="card-tag" data-lang="en">Event</span>
+              </div>
+              <h3>
+                <span data-lang="bg" class="lang-active">Митинг за Деня на победата в София</span>
+                <span data-lang="en">Victory Day Rally in Sofia</span>
+              </h3>
+              <p>
+                <span data-lang="bg" class="lang-active">БРМ участва в традиционния митинг за Деня на победата заедно с хиляди работници и млади хора от цялата страна.</span>
+                <span data-lang="en">BWY participated in the traditional Victory Day rally alongside thousands of workers and young people from across the country.</span>
+              </p>
+              <a href="#" class="card-link">
+                <span data-lang="bg" class="lang-active">Прочети повече</span>
+                <span data-lang="en">Read more</span>
+                &rarr;
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="actions">
+            <div class="card-img" aria-hidden="true">✊</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <time class="card-date" datetime="2026
+                -04-15">15.04.2026</time>
+                <span class="card-tag" data-lang="bg" class="lang-active">Акция</span>
+                <span class="card-tag" data-lang="en">Action</span>
+              </div>
+              <h3>
+                <span data-lang="bg" class="lang-active">Протест срещу нископлатения студентски труд</span>
+                <span data-lang="en">Protest Against Low-Paid Student Labour</span>
+              </h3>
+              <p>
+                <span data-lang="bg" class="lang-active">Членове на БРМ излязоха на протест пред Министерство на образованието, изисквайки достойно заплащане за студентските стажове.</span>
+                <span data-lang="en">BWY members staged a protest outside the Ministry of Education demanding fair pay for student internships.</span>
+              </p>
+              <a href="#" class="card-link">
+                <span data-lang="bg" class="lang-active">Прочети повече</span>
+                <span data-lang="en">Read more</span>
+                &rarr;
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="solidarity">
+            <div class="card-img" aria-hidden="true">🌍</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <time class="card-date" datetime="2026-03-28">28.03.2026</time>
+                <span class="card-tag" data-lang="bg" class="lang-active">Солидарност</span>
+                <span class="card-tag" data-lang="en">Solidarity</span>
+              </div>
+              <h3>
+                <span data-lang="bg" class="lang-active">Солидарност с работниците в Гърция</span>
+                <span data-lang="en">Solidarity with Workers in Greece</span>
+              </h3>
+              <p>
+                <span data-lang="bg" class="lang-active">БРМ изрази солидарност с гръцките работници, стачкуващи срещу приватизацията на обществените услуги.</span>
+                <span data-lang="en">BWY expressed solidarity with Greek workers striking against the privatisation of public services.</span>
+              </p>
+              <a href="#" class="card-link">
+                <span data-lang="bg" class="lang-active">Прочети повече</span>
+                <span data-lang="en">Read more</span>
+                &rarr;
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="events">
+            <div class="card-img" aria-hidden="true">🎓</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <time class="card-date" datetime="2025-03-10">10.03.2025</time>
+                <span class="card-tag" data-lang="bg" class="lang-active">Събитие</span>
+                <span class="card-tag" data-lang="en">Event</span>
+              </div>
+              <h3>
+                <span data-lang="bg" class="lang-active">Дискусия: Образованието като право, не стока</span>
+                <span data-lang="en">Discussion: Education as a Right, Not a Commodity</span>
+              </h3>
+              <p>
+                <span data-lang="bg" class="lang-active">Публична дискусия с участието на студенти, преподаватели и синдикалисти относно комерсиализацията на висшето образование.</span>
+                <span data-lang="en">A public discussion involving students, academics, and trade unionists on the commercialisation of higher education.</span>
+              </p>
+              <a href="#" class="card-link">
+                <span data-lang="bg" class="lang-active">Прочети повече</span>
+                <span data-lang="en">Read more</span>
+                &rarr;
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="actions">
+            <div class="card-img" aria-hidden="true">🏭</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <time class="card-date" datetime="2025-02-20">20.02.2025</time>
+                <span class="card-tag" data-lang="bg" class="lang-active">Акция</span>
+                <span class="card-tag" data-lang="en">Action</span>
+              </div>
+              <h3>
+                <span data-lang="bg" class="lang-active">Кампания срещу съкращенията в металургията</span>
+                <span data-lang="en">Campaign Against Metallurgy Layoffs</span>
+              </h3>
+              <p>
+                <span data-lang="bg" class="lang-active">БРМ подкрепи работниците от металургичния завод в Пловдив, заплашени от масови съкращения поради преструктуриране.</span>
+                <span data-lang="en">BWY supported workers at the Plovdiv metallurgy plant threatened with mass layoffs due to corporate restructuring.</span>
+              </p>
+              <a href="#" class="card-link">
+                <span data-lang="bg" class="lang-active">Прочети повече</span>
+                <span data-lang="en">Read more</span>
+                &rarr;
+              </a>
+            </div>
+          </article>
+
+          <article class="card" data-category="solidarity">
+            <div class="card-img" aria-hidden="true">☮️</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <time class="card-date" datetime="2025-01-15">15.01.2025</time>
+                <span class="card-tag" data-lang="bg" class="lang-active">Солидарност</span>
+                <span class="card-tag" data-lang="en">Solidarity</span>
+              </div>
+              <h3>
+                <span data-lang="bg" class="lang-active">Против войната и империализма</span>
+                <span data-lang="en">Against War and Imperialism</span>
+              </h3>
+              <p>
+                <span data-lang="bg" class="lang-active">БРМ се присъедини към антивоенния марш в центъра на София, настоявайки за мир и международна работническа солидарност.</span>
+                <span data-lang="en">BWY joined the anti-war march in central Sofia, demanding peace and international workers' solidarity.</span>
+              </p>
+              <a href="#" class="card-link">
+                <span data-lang="bg" class="lang-active">Прочети повече</span>
+                <span data-lang="en">Read more</span>
+                &rarr;
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Pagination -->
+        <nav class="pagination" aria-label="Pagination">
+          <a href="#" class="page-item active" aria-current="page">1</a>
+          <a href="#" class="page-item">2</a>
+          <a href="#" class="page-item">3</a>
+          <a href="#" class="page-item">&rsaquo;</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <span data-lang="bg" class="lang-active">Българска работническа младеж</span>
+          <span data-lang="en">Bulgarian Workers' Youth</span>
+        </div>
+        <div class="footer-copy">
+          <span data-lang="bg" class="lang-active">&copy; 2026 БРМ. Всички права запазени.</span>
+          <span data-lang="en">&copy; 2026 BWY. All rights reserved.</span>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">
+          <span data-lang="bg" class="lang-active">Начало</span>
+          <span data-lang="en">Home</span>
+        </a>
+        <a href="about.html">
+          <span data-lang="bg" class="lang-active">За нас</span>
+          <span data-lang="en">About</span>
+        </a>
+        <a href="news.html">
+          <span data-lang="bg" class="lang-active">Новини</span>
+          <span data-lang="en">News</span>
+        </a>
+        <a href="articles.html">
+          <span data-lang="bg" class="lang-active">Статии</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="materials.html">
+          <span data-lang="bg" class="lang-active">Материали</span>
+          <span data-lang="en">Materials</span>
+        </a>
+        <a href="contact.html">
+          <span data-lang="bg" class="lang-active">Контакти</span>
+          <span data-lang="en">Contact</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var filter = btn.dataset.filter;
+        document.querySelectorAll('.cards-grid .card').forEach(function (card) {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
