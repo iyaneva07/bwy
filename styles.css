@@ -1366,7 +1366,43 @@ footer {
 .sidebar-card ul li a:hover {
   color: var(--primary);
 }
-
+.post-resources {
+  margin: 2.5rem 0 0;
+  padding: 1.5rem 1.75rem;
+  background: #f8f6f6;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.post-resources-title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+.post-resources-list {
+  margin: 0;
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.post-resources-list li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.post-resources-list a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity var(--transition);
+}
+.post-resources-list a:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
 .post-footer-nav {
   display: flex;
   justify-content: space-between;
