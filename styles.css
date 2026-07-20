@@ -1225,7 +1225,7 @@ footer {
 }
 
 .post-title {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.35rem, 2.5vw, 2.25rem);
   font-weight: 900;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -1259,8 +1259,8 @@ footer {
 }
 
 .post-body {
-  font-size: 1rem;
-  line-height: 1.85;
+  font-size: 0.9rem;
+  line-height: 1.8;
   }
 
 .post-body h2 {
