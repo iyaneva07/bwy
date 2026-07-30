@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--  ПРОМЕНИ: заглавие на новината -->
+  <title data-lang="bg" class="lang-active">Честване на Кубинската революция | БРМ</title>
+  <title data-lang="en">Celebration of the Cuban Revolution | BWY</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+ <script>
+
+function openImage(src){
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeImage(){
+    document.getElementById("lightbox").style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape"){
+        closeImage();
+    }
+
+});
+
+</script>
+
+</script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="brand-abbr"><img src="logo.png" alt="БРМ" class="brand-logo" /></div>
+        <div class="brand-name">
+          <span class="full" data-lang="bg" class="lang-active">Българска работническа младеж</span>
+          <span class="full" data-lang="en">Bulgarian Workers' Youth</span>
+          <span class="sub" data-lang="bg" class="lang-active">Официален сайт</span>
+          <span class="sub" data-lang="en">Official Website</span>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li>
+          <a href="index.html">
+            <span data-lang="bg" class="lang-active">Начало</span>
+            <span data-lang="en">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span data-lang="bg" class="lang-active">За нас</span>
+            <span data-lang="en">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="news.html" class="active">
+            <span data-lang="bg" class="lang-active">Новини</span>
+            <span data-lang="en">News</span>
+          </a>
+        </li>
+        <li>
+          <a href="articles.html">
+            <span data-lang="bg" class="lang-active">Статии</span>
+            <span data-lang="en">Articles</span>
+          </a>
+        </li>
+        <li>
+          <a href="materials.html">
+            <span data-lang="bg" class="lang-active">Материали</span>
+            <span data-lang="en">Materials</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span data-lang="bg" class="lang-active">Контакти</span>
+            <span data-lang="en">Contact</span>
+          </a>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <button class="lang-btn" aria-label="Switch to English">EN</button>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav class="post-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">
+          <span data-lang="bg" class="lang-active">Начало</span>
+          <span data-lang="en">Home</span>
+        </a>
+        <span>›</span>
+        <a href="news.html">
+          <span data-lang="bg" class="lang-active">Новини</span>
+          <span data-lang="en">News</span>
+        </a>
+        <span>›</span>
+        <!--  ПРОМЕНИ: заглавие в breadcrumb -->
+        <span data-lang="bg" class="lang-active">Честване на Кубинската революция</span>
+        <span data-lang="en">Celebration of the Cuban Revolution</span>
+      </nav>
+
+      <!-- Post header -->
+      <header class="post-header">
+        <div class="card-meta">
+          <!--  ПРОМЕНИ: категория (Събитие / Акция / Солидарност) -->
+          <span class="card-tag">
+            <span data-lang="bg" class="lang-active">Събитие</span>
+            <span data-lang="en">Event</span>
+          </span>
+          <!--  ПРОМЕНИ: дата -->
+          <time class="card-date" datetime="2026-07-25">25.07.2026</time>
+        </div>
+
+        <!--  ПРОМЕНИ: основно заглавие -->
+        <h1 class="post-title">
+          <span data-lang="bg" class="lang-active">Честване на Кубинската революция</span>
+          <span data-lang="en">Celebration of the Cuban Revolution</span>
+        </h1>
+
+        <!--  ПРОМЕНИ: кратко въведение / лийд -->
+        
+      </header>
+
+      <!-- Post layout: body + sidebar -->
+      <div class="post-layout">
+
+        <!-- Main article body -->
+        <article class="post-body">
+
+          <!--  ДОБАВИ СЪДЪРЖАНИЕ ТУК -->
+			<figure class="post-image">
+		<img src="cuba-main.jpeg"
+			alt="Честване на Кубинската революция"
+			onclick="openImage(this.src)">
+				<figcaption>
+				<span data-lang="bg" class="lang-active">Участници в честването на Кубинската революция. </span>
+				<span data-lang="en"> Participants in the celebration of the Cuban Revolution.</span>
+			</figcaption>
+			</figure>
+			<div class="photo-grid">
+				<img src="cuba1.jpeg" alt="Снимка 1" onclick="openImage(this.src)">
+				<img src="cuba2.jpeg" alt="Снимка 2" onclick="openImage(this.src)">
+				<img src="cuba3.jpeg" alt="Снимка 3" onclick="openImage(this.src)">
+				<img src="cuba4.jpeg" alt="Снимка 4" onclick="openImage(this.src)">
+			</div>
+
+<div id="lightbox" class="lightbox" onclick="closeImage()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
+		
+          <p>
+            <span data-lang="bg" class="lang-active">Членове на ,,Българска работническа младеж” взеха участие в ежегодното отбелязване на 25 юли – празник на Куба и честване на започналата на 26 юли 1953 г. Кубинска революция.</span>
+            <span data-lang="en">Members of the "Bulgarian Workers' Youth" took part in the annual celebration of July 25 - Cuba's holiday and a celebration of the Cuban Revolution that began on July 26, 1953.</span>
+          </p>
+
+          <p>
+            <span data-lang="bg" class="lang-active">На събитието бяха отправени остри критики към задушаващото ембарго, което САЩ продължава да налага върху народа на Куба. Беше припомнена изключителната роля на революционната 
+			борба, водена от Фидел Кастро и борците от ,,Движение 26 юли” , която освободи Куба от хватката на империализма и постави основите на кубинския социализъм.</span>
+            <span data-lang="en">The event sharply criticized the suffocating embargo that the United States continues to impose on the people of Cuba. It recalled the exceptional role of the revolutionary struggle led by Fidel Castro
+			and the fighters of the "July 26th Movement", which liberated Cuba from the grip of imperialism and laid the foundations of Cuban socialism.</span>
+          </p>
+
+          <p>
+            <span data-lang="bg" class="lang-active">Честването беше организирано от кубинското посолство и Асоциация за приятелство „България-Куба“. Открито беше с реч на Нейно Превъзходителство посланичката на Република Куба
+			в България г-жа Мариета Гарсия Хордан, която осъди действията на САЩ, но и изрази надеждата си за социалистическото бъдеще на Куба.</span>
+            <span data-lang="en">The celebration was organized by the Cuban Embassy and the Bulgaria-Cuba Friendship Association. It was opened with a speech by Her Excellency the Ambassador of the Republic of Cuba to Bulgaria, Ms.
+			Marieta Garcia Jordan, who condemned the actions of the United States, but also expressed her hope for the socialist future of Cuba.</span>
+          </p>
+
+          <p>
+            <span data-lang="bg" class="lang-active">Последваха изказвания на представители на редица леви организации, сред които и Българска работническа младеж.</span>
+            <span data-lang="en">This was followed by speeches by representatives of a number of left-wing organizations, including the Bulgarian Workers' Youth.</span>
+          </p>
+		  
+		   <p>
+            <span data-lang="bg" class="lang-active">В края на събитието тържествено бяха връчени знамената на Република България и Република Куба на представителите на ,,Българска работническа младеж” , които, заедно със съмишленици 
+			и другари от други комунистически организации, се включиха в инициативата за предвиденото на 26.07 изкачване на Черни връх.</span>
+            <span data-lang="en">At the end of the event, the flags of the Republic of Bulgaria and the Republic of Cuba were solemnly presented to the representatives of the "Bulgarian Workers' Youth", who, together with like-minded people
+			and comrades from other communist organizations, joined the initiative for the planned climb of Cherni Vrah on July 26.</span>
+          </p>
+
+          <!-- Post navigation -->
+          <div class="post-footer-nav">
+            <a href="news.html" class="post-back-link">
+              ← <span data-lang="bg" class="lang-active">Обратно към новини</span>
+              <span data-lang="en">Back to News</span>
+            </a>
+            <a href="contact.html" class="btn btn-primary">
+              <span data-lang="bg" class="lang-active">Свържи се с нас</span>
+              <span data-lang="en">Contact Us</span>
+            </a>
+          </div>
+
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="post-sidebar">
+
+          <div class="sidebar-card">
+            <h4>
+              <span data-lang="bg" class="lang-active">Категории</span>
+              <span data-lang="en">Categories</span>
+            </h4>
+            <ul>
+              <li><a href="news.html">
+                <span data-lang="bg" class="lang-active">Всички новини</span>
+                <span data-lang="en">All News</span>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>
+              <span data-lang="bg" class="lang-active">Свържи се</span>
+              <span data-lang="en">Get Involved</span>
+            </h4>
+            <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1rem; line-height:1.6;">
+              <span data-lang="bg" class="lang-active">Искаш да участваш? Пиши ни.</span>
+              <span data-lang="en">Want to get involved? Contact us.</span>
+            </p>
+            <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content:center;">
+              <span data-lang="bg" class="lang-active">Контакти</span>
+              <span data-lang="en">Contact</span>
+            </a>
+          </div>
+
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <span data-lang="bg" class="lang-active">Българска работническа младеж</span>
+          <span data-lang="en">Bulgarian Workers' Youth</span>
+        </div>
+        <div class="footer-copy">
+          <span data-lang="bg" class="lang-active">© 2026 БРМ. Всички права запазени.</span>
+          <span data-lang="en">© 2026 BWY. All rights reserved.</span>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">
+          <span data-lang="bg" class="lang-active">Начало</span>
+          <span data-lang="en">Home</span>
+        </a>
+        <a href="about.html">
+          <span data-lang="bg" class="lang-active">За нас</span>
+          <span data-lang="en">About</span>
+        </a>
+        <a href="news.html">
+          <span data-lang="bg" class="lang-active">Новини</span>
+          <span data-lang="en">News</span>
+        </a>
+        <a href="articles.html">
+          <span data-lang="bg" class="lang-active">Статии</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="materials.html">
+          <span data-lang="bg" class="lang-active">Материали</span>
+          <span data-lang="en">Materials</span>
+        </a>
+        <a href="contact.html">
+          <span data-lang="bg" class="lang-active">Контакти</span>
+          <span data-lang="en">Contact</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>
