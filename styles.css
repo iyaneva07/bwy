@@ -107,7 +107,7 @@ a:hover {
   display: block;
   height: 40px;  
   width: auto;
-  filter: drop-shadow(0 0 4px rgba(255,255,255,.35));
+  filter: drop-shadow(0 0 4px rgba(255,255,255,.5));
 }
 
 .brand-name {
