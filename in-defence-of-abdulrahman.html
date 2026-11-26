@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--  заглавие на новината -->
+  <title data-lang="bg" class="lang-active">В защита на Абдулрахман Ал-Халиди | БРМ</title>
+  <title data-lang="en">In Defence of Abdulrahman Al-Khalidi | BWY</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+ <script>
+
+function openImage(src){
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function closeImage(){
+    document.getElementById("lightbox").style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape"){
+        closeImage();
+    }
+
+});
+
+</script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="brand-abbr"><img src="logo.png" alt="БРМ" class="brand-logo" /></div>
+        <div class="brand-name">
+          <span class="full" data-lang="bg" class="lang-active">Българска работническа младеж</span>
+          <span class="full" data-lang="en">Bulgarian Workers' Youth</span>
+          <span class="sub" data-lang="bg" class="lang-active">Официален сайт</span>
+          <span class="sub" data-lang="en">Official Website</span>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li>
+          <a href="index.html">
+            <span data-lang="bg" class="lang-active">Начало</span>
+            <span data-lang="en">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span data-lang="bg" class="lang-active">За нас</span>
+            <span data-lang="en">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="news.html" class="active">
+            <span data-lang="bg" class="lang-active">Новини</span>
+            <span data-lang="en">News</span>
+          </a>
+        </li>
+        <li>
+          <a href="articles.html">
+            <span data-lang="bg" class="lang-active">Статии</span>
+            <span data-lang="en">Articles</span>
+          </a>
+        </li>
+        <li>
+          <a href="materials.html">
+            <span data-lang="bg" class="lang-active">Материали</span>
+            <span data-lang="en">Materials</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <span data-lang="bg" class="lang-active">Контакти</span>
+            <span data-lang="en">Contact</span>
+          </a>
+        </li>
+      </ul>
+      <div class="nav-controls">
+        <button class="lang-btn" aria-label="Switch to English">EN</button>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <nav class="post-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">
+          <span data-lang="bg" class="lang-active">Начало</span>
+          <span data-lang="en">Home</span>
+        </a>
+        <span>›</span>
+        <a href="news.html">
+          <span data-lang="bg" class="lang-active">Новини</span>
+          <span data-lang="en">News</span>
+        </a>
+        <span>›</span>
+        <!--  ПРОМЕНИ: заглавие в breadcrumb -->
+        <span data-lang="bg" class="lang-active">В защита на Абдулрахман Ал-Халиди</span>
+        <span data-lang="en">In Defence of Abdulrahman Al-Khalidi</span>
+      </nav>
+
+      <!-- Post header -->
+      <header class="post-header">
+        <div class="card-meta">
+          <!--  ПРОМЕНИ: категория (Събитие / Акция / Солидарност) -->
+          <span class="card-tag">
+            <span data-lang="bg" class="lang-active">Солидарност</span>
+            <span data-lang="en">Solidarity</span>
+          </span>
+          <!--  ПРОМЕНИ: дата -->
+          <time class="card-date" datetime="2026-07-25">26.11.2026</time>
+        </div>
+
+        <!--  ПРОМЕНИ: основно заглавие -->
+        <h1 class="post-title">
+          <span data-lang="bg" class="lang-active">Ч защита на Абдулрахман Ал-Халиди</span>
+          <span data-lang="en">In Defence of Abdulrahman Al-Khalidi</span>
+        </h1>
+
+        <!--  ПРОМЕНИ: кратко въведение / лийд -->
+        
+      </header>
+
+      <!-- Post layout: body + sidebar -->
+      <div class="post-layout">
+
+        <!-- Main article body -->
+        <article class="post-body">
+
+          <!--  ДОБАВИ СЪДЪРЖАНИЕ ТУК -->
+			<figure class="post-image">
+		<img src="abdulrahman.jpg"
+			alt="Abdulrahman"
+			onclick="openImage(this.src)">
+			</figure>
+
+			<div id="lightbox" class="lightbox" onclick="closeImage()">
+				<span class="lightbox-close">&times;</span>
+				<img id="lightbox-img" src="" alt="">
+			</div>
+		
+          <p>
+            <span data-lang="bg" class="lang-active">„Прогресивна“ България за пореден път показа своята регресивност, решавайки да изгради по-тесни връзки с една от най-потисническите държави – Саудитска Арабия. Държавата, която е един от най-големите 
+			производители на нефт и поради това верен партньор на ЕС и САЩ, е известна със своята „демократичност“ – една от малкото в света абсолютни монархии, там не съществуват нито политически партии, нито избори, а голяма част от икономиката ѝ се 
+			гради на робски труд (все пак ще отбележим, че преди няколко години жените там получиха правото да шофират).</span>
+            <span data-lang="en">"Progressive" Bulgaria has once again demonstrated its regressive nature by deciding to forge closer ties with one of the most oppressive states—Saudi Arabia. This nation, a major oil producer and consequently a steadfast 
+			partner to the EU and the US, is renowned for its "democratic" credentials: it is one of the world’s few absolute monarchies, where neither political parties nor elections exist, and a significant portion of the economy is built upon slave labor 
+			(though it is worth noting that, a few years ago, women there were granted the right to drive).</span>
+          </p>
+		  <img src="radev_v_riyadh.jpg"
+			alt="Radev in Riyadh"
+			onclick="openImage(this.src)">
+			</figure>
+			<h2>
+            <span data-lang="bg" class="lang-active">Кой е Абдулрахман Aл-Халиди?</span>
+            <span data-lang="en">Who is Abdulrahman Al-Khalidi?</span>
+          </h2>
+          <p>
+            <span data-lang="bg" class="lang-active">Абдулрахман Aл-Халиди е политически дисидент. Участва активно в Саудитската асоциация за граждански и политически права, а по време на Арабската пролет се включва в антиправителствени протести. 
+			След потушаването на протестите и започналите арести на видни дейци, изказващи се в подкрепа на политическа и държавна реформа, Ал-Халиди напуска Саудитска Арабия и се установява в Турция. Оттам продължава дейността си, ставайки член на 
+			Движението на пчелите. През 2018 г. Джамал Хашогджи, друг член на движението, отива в консулството на Саудитска Арабия в Истанбул с цел получаване на документи – впоследствие изчезва „безследно“ (смята се, че е бил нарязан на парчета и 
+			изнесен в куфар от саудитските служби). Когато няколко години по-късно Ал-Халиди трябва да отиде до консулството, за да получи документи, той отказва. Решава да потърси убежище в ЕС. През 2021 г. пресича границата между България и Турция, 
+			надявайки се да получи политическо убежище. Българската държава го държи в бежански лагер в продължение на почти 5 години, отказвайки да му даде бежански статут. По време на престоя си там изпитва европейската „демократичност“ от първа ръка – 
+			опитва се да сподели храна с друго бежанско семейство – нещо, което му докарва гнева на българската полиция. Полицаите го отвеждат в тоалетната, където го подлагат на побой. По-късно българските служби излизат с твърдението, че той се е „опитвал да се самонарани в стена“.</span>
+            <span data-lang="en">Abdulrahman al-Khalidi is a political dissident. He was an active participant in the Saudi Civil and Political Rights Association and took part in anti-government protests during the Arab Spring. Following the suppression of these protests and the subsequent 
+			arrests of prominent figures who advocated for political and state reform, Al-Khalidi left Saudi Arabia and settled in Turkey. From there, he continued his activism, becoming a member of the "Bee Movement." In 2018, Jamal Khashoggi—another member of the movement—visited the Saudi 
+			Arabian consulate in Istanbul to obtain documents; he subsequently disappeared without a trace (it is believed that he was dismembered and smuggled out in a suitcase by Saudi operatives). When, years later, Al-Khalidi was required to visit the consulate to obtain documents, he refused. 
+			He decided to seek asylum in the EU. In 2021, he crossed the border from Turkey into Bulgaria, hoping to be granted political asylum. The Bulgarian state held him in a refugee camp for nearly five years, refusing to grant him refugee status. During his time there, he experienced European 
+			"democracy" firsthand: when he attempted to share food with another refugee family, he incurred the wrath of the Bulgarian police. The officers took him into a restroom, where they subjected him to a beating. Later, the Bulgarian services claimed that he had “attempted to injure himself against a wall.”</span>
+          </p>
+			<h2>
+            <span data-lang="bg" class="lang-active">Какво реши българската държава?</span>
+            <span data-lang="en">What was the decision of the Bulgarian state?</span>
+          </h2>
+          <p>
+            <span data-lang="bg" class="lang-active">През 2025 г. Софийският административен съд постанови освобождаването на Ал-Халиди. Впоследствие обаче Върховният административен съд отмени решението, опирайки се на становище на ДАНС, 
+			според което той „представлява опасност за националната сигурност“. В становището на Агенцията по национална сигурност – която е пълна с грешки относно гражданството на Ал-Халиди, възрастта му и други неща – се казва, че Саудитска 
+			Арабия „предприема мерки за демократизация“ и поради това няма основателна причина за тревога относно съдбата на дисидента. Така въпреки съдбата на множество саудитски активисти, въпреки показанията на множество други саудитски граждани, 
+			въпреки огромния брой заплахи, отправени от свързани със саудитското правителство личности към Ал-Халиди, българските служби решиха, че няма никакво основание да му се даде бежански статут и поради това трябва да бъде екстрадиран от България – 
+			а връщането му в Саудитска Арабия би било равнозначно на смърт. Службите нарушиха не само българските и международните закони за правата на човека, но и българската конституция, показвайки още веднъж за кого важат и за кого не важат законите. 
+			Нито една политическа партия не подкрепи Ал-Халиди, въпреки скорошните прояви „в защита на демокрацията и човешките права“ – оказва се, че противно на техните твърдения, Европа също не е благоприятна почва за тези ценности.</span>
+            <span data-lang="en">In 2025, the Sofia Administrative Court ordered the release of Al-Khalidi. Subsequently, however, the Supreme Administrative Court overturned this decision, relying on an opinion from the State Agency for National Security 
+			(DANS) which claimed that he "poses a threat to national security." The Agency’s assessment—riddled with errors regarding Al-Khalidi’s citizenship, age, and other details—asserted that Saudi Arabia is "taking steps toward democratization," and that there 
+			is, therefore, no valid cause for concern regarding the dissident's fate. Thus, despite the fate of numerous Saudi activists, the testimonies of many other Saudi citizens, and the vast number of threats directed at Al-Khalidi by individuals linked to the Saudi 
+			government, the Bulgarian security services concluded there were no grounds to grant him refugee status. Consequently, they determined he should be extradited from Bulgaria—even though his return to Saudi Arabia would be tantamount to a death sentence. The services 
+			violated not only Bulgarian and international human rights laws but also the Bulgarian Constitution, demonstrating once again for whom the laws apply—and for whom they do not. Not a single political party came to Al-Khalidi’s defense, despite their recent displays of support for 
+			"democracy and human rights"—revealing that, contrary to their claims, Europe is not necessarily fertile ground for these values ​​either.</span>
+          </p>
+
+          <p>
+            <span data-lang="bg" class="lang-active">Настояваме държавата да прекрати позорните си действия и да предостави убежище на Ал-Халиди, вместо да превръща човешката свобода в разменна монета за политически интереси!</span>
+            <span data-lang="en">We demand that the state put an end to its disgraceful actions and grant asylum to Al-Khalidi, instead of turning human freedom into a bargaining chip for political interests!</span>
+          </p>
+		  
+		   <p>
+            <span data-lang="bg" class="lang-active">На 28 ноември, събота, в 11 часа пред сградата на Президентството ще се проведе протест в подкрепа на Ал-Халиди. Призоваваме всички да се присъединят и заедно да изразим своята солидарност. Убежището е право, не привилегия!</span>
+            <span data-lang="en">On Saturday, November 28, at 11:00 a.m., a protest in support of Al-Khalidi will take place in front of the Presidency building. We call on everyone to join us and express our solidarity together. Asylum is a right, not a privilege!</span>
+          </p>
+
+          <!-- Post navigation -->
+          <div class="post-footer-nav">
+            <a href="news.html" class="post-back-link">
+              ← <span data-lang="bg" class="lang-active">Обратно към новини</span>
+              <span data-lang="en">Back to News</span>
+            </a>
+            <a href="contact.html" class="btn btn-primary">
+              <span data-lang="bg" class="lang-active">Свържи се с нас</span>
+              <span data-lang="en">Contact Us</span>
+            </a>
+          </div>
+
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="post-sidebar">
+
+          <div class="sidebar-card">
+            <h4>
+              <span data-lang="bg" class="lang-active">Категории</span>
+              <span data-lang="en">Categories</span>
+            </h4>
+            <ul>
+              <li><a href="news.html">
+                <span data-lang="bg" class="lang-active">Всички новини</span>
+                <span data-lang="en">All News</span>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>
+              <span data-lang="bg" class="lang-active">Свържи се</span>
+              <span data-lang="en">Get Involved</span>
+            </h4>
+            <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1rem; line-height:1.6;">
+              <span data-lang="bg" class="lang-active">Искаш да участваш? Пиши ни.</span>
+              <span data-lang="en">Want to get involved? Contact us.</span>
+            </p>
+            <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content:center;">
+              <span data-lang="bg" class="lang-active">Контакти</span>
+              <span data-lang="en">Contact</span>
+            </a>
+          </div>
+
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <span data-lang="bg" class="lang-active">Българска работническа младеж</span>
+          <span data-lang="en">Bulgarian Workers' Youth</span>
+        </div>
+        <div class="footer-copy">
+          <span data-lang="bg" class="lang-active">© 2026 БРМ. Всички права запазени.</span>
+          <span data-lang="en">© 2026 BWY. All rights reserved.</span>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">
+          <span data-lang="bg" class="lang-active">Начало</span>
+          <span data-lang="en">Home</span>
+        </a>
+        <a href="about.html">
+          <span data-lang="bg" class="lang-active">За нас</span>
+          <span data-lang="en">About</span>
+        </a>
+        <a href="news.html">
+          <span data-lang="bg" class="lang-active">Новини</span>
+          <span data-lang="en">News</span>
+        </a>
+        <a href="articles.html">
+          <span data-lang="bg" class="lang-active">Статии</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="materials.html">
+          <span data-lang="bg" class="lang-active">Материали</span>
+          <span data-lang="en">Materials</span>
+        </a>
+        <a href="contact.html">
+          <span data-lang="bg" class="lang-active">Контакти</span>
+          <span data-lang="en">Contact</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>
