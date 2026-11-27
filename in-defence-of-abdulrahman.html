@@ -8,6 +8,15 @@
   <title data-lang="en">In Defence of Abdulrahman Al-Khalidi | BWY</title>
   <link rel="icon" href="logo.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
+	<style>
+    @media (min-width: 901px) {
+      .post-body .post-image img,
+      .post-body .post-inline-image {
+        max-width: 480px;
+        height: auto;
+      }
+    }
+  </style>
  <script>
 
 function openImage(src){
@@ -141,11 +150,9 @@ document.addEventListener("keydown", function(e){
         <article class="post-body">
 
           <!--  ДОБАВИ СЪДЪРЖАНИЕ ТУК -->
-			<figure class="post-image">
-		<img src="abdulrahman.jpg"
+			<img class="post-inline-image"src="abdulrahman.jpg"
 			alt="Abdulrahman"
 			onclick="openImage(this.src)">
-			</figure>
 
 			<div id="lightbox" class="lightbox" onclick="closeImage()">
 				<span class="lightbox-close">&times;</span>
@@ -160,10 +167,9 @@ document.addEventListener("keydown", function(e){
 			partner to the EU and the US, is renowned for its "democratic" credentials: it is one of the world’s few absolute monarchies, where neither political parties nor elections exist, and a significant portion of the economy is built upon slave labor 
 			(though it is worth noting that, a few years ago, women there were granted the right to drive).</span>
           </p>
-		  <img src="radev_v_riyadh.jpg"
+		  <img class="post-inline-image" src="radev_v_riyadh.jpg"
 			alt="Radev in Riyadh"
 			onclick="openImage(this.src)">
-			</figure>
 			<h2>
             <span data-lang="bg" class="lang-active">Кой е Абдулрахман Aл-Халиди?</span>
             <span data-lang="en">Who is Abdulrahman Al-Khalidi?</span>
